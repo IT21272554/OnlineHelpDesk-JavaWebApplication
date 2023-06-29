@@ -1,0 +1,242 @@
+@charset "ISO-8859-1";
+/*Whole Page*/
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    /*padding-top: 80px;*/
+    padding-bottom: 150px;
+    min-height: 100vh;
+}
+/*Header & Footer*/
+header, footer{
+    /*position: absolute;*/
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+/*Header*/
+header{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  height: 80px;
+  top: 0%;
+}
+
+header img{
+   /* position: absolute;*/
+   /* margin-top: 10px;*/
+    left: 1%;
+}
+/*Navigation Bar*/
+nav{
+   /*position: absolute;*/
+   width: calc(100% - 50px);
+   display: flex;
+   justify-content: space-around;
+}
+
+nav a{
+    border-radius: 50px;
+    position: relative;
+    /*left: 5%;
+    top: 20px;*/
+    color:white;
+    text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover, nav a:active {
+  background-color: rgba(181, 163, 163, 0.968);
+}
+
+@media screen and (max-width: 1136px) {
+
+  nav a{
+    padding: 12px 0px !important ;
+  }
+  
+}
+
+/*Search Bar*/
+
+.search {
+  width: 20%;
+  display: flex;
+  height: 42px;
+  transition: 2s;
+  /*display: inline-block;*/
+}
+.search input[type=text] {
+  width: 85%;
+ /* position: absolute;*/
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid grey;
+  /*float: left;
+  width: 12%;*/
+  background: #f1f1f1;
+  border-radius: 50px;
+  /*left: 78%;
+  top: 20px;*/
+}
+
+.search button {
+  width: 15%;
+ /* position: absolute;*/
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 7px;
+  left: 92%;
+  top: 20px;
+}
+
+.search button:hover{
+  font-size: 10px;
+}
+
+/*Main*/
+main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    
+}
+/*Footer*/
+footer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    bottom: 0%;
+    width: 100%;
+}
+footer div{
+  display: flex;
+  width: 40%;
+}
+
+.social-icon{
+  justify-content: space-evenly;
+
+}
+
+footer h4{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+}
+
+@media screen and (max-width: 762px) {
+
+
+  
+}
+
+/*Feedback button*/
+.feedback {
+    border-radius: 4px;
+    background-color: hsl(38, 91%, 54%);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  .ratebtn-container{
+    width: 20% !important;
+    justify-content: center;
+  }
+  .feedback span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .feedback span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .feedback:hover span {
+    padding-right: 15px;
+  }
+  
+  .feedback:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+/*Social Media*/
+  .fa {
+    
+    padding: 20px;
+    font-size: 15px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .quickLinks{
+    text-align: center;
+    justify-content: space-evenly;
+    width: 25%;
+    text-decoration: none;
+    color: white;
+
+  }
+
+ 
